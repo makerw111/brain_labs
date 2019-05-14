@@ -7,7 +7,7 @@ public class Test {
     public static void main(String[] args) {
 
         // Part 1
-        System.out.println("Sum of values: " + sum(3,3,5,10));
+        System.out.println("Sum of values: " + sum(3,6,4,3));
         System.out.println("Multiply of values: " +  mul(1,1,5,10)); //TODO Fix method inside.
 
         // Part 2

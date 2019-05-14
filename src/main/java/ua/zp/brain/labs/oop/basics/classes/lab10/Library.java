@@ -3,6 +3,7 @@ package ua.zp.brain.labs.oop.basics.classes.lab10;
 public class Library {
     private final Film[] filmLibrary;
     private final String nameLibrary;
+//    private int sizeLibrary;
 
     {
         filmLibrary = new Film[5];
@@ -13,7 +14,11 @@ public class Library {
 
     public Library(String a) {
         this.nameLibrary = a;
-        System.out.println("Library " + this.nameLibrary + " successfully");
+        System.out.println("Library " + this.nameLibrary + " successfully create");
+    }
+
+    public int sizeLibrary() {
+        return filmLibrary.length;
     }
 
     public Film[] getFilmLibrary() {
@@ -24,10 +29,10 @@ public class Library {
         return nameLibrary;
     }
 
-    public int lookForIndex (){
+    public int lookForIndex() {
 
         for (int i = 0; i < filmLibrary.length; i++) {
-            if(null==filmLibrary[i]){
+            if (null == filmLibrary[i]) {
                 return i;
             }
         }
